@@ -1,36 +1,11 @@
 @import 'bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto|Six+Caps');
 
-$title-color: #3675db;
 
-.movie-item {
-  a {
-    div {
-      color: $title-color; 
-      text-align: center;
-      padding: 10px;
-      font-size: 1.2em;
-    }
-  }
+    $fontDefault: 'Roboto', sans-serif;
+    $fontLogo: 'Six Caps', sans-serif;
 
-  @include transition(all 1s ease-in-out);
-  position: relative;
-  display: block;
+.main{
+ font-family: $fontDefault;
 
-  &.ng-enter.ng-enter-active, 
-  &.ng-leave {
-      opacity: 1;
-      @include transform(translateX(0px));
-  }
-    
-  &.ng-leave.ng-leave-active,
-  &.ng-enter {
-      opacity: 0;
-      @include transform(translateX(-2000px));
-  }
-
-  &.ng-enter-stagger,&.ng-leave-stagger {
-    @include transition-delay(0.1s);
-    @include transition-duration(0s);
-  }
 }
-

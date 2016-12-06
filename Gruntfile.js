@@ -420,6 +420,12 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      fonts: {
+        expand: true,
+        flatten: true,
+        src: 'bower_components/components-font-awesome/fonts/*',
+	dest: 'dist/fonts',
       }
     },
 
@@ -427,14 +433,17 @@ module.exports = function (grunt) {
     concurrent: {
       server: [
         'sass:server',
-        'copy:styles'
+        'copy:styles',
+	'copy:fonts'
       ],
       test: [
-        'copy:styles'
+        'copy:styles',
+	'copy:fonts'
       ],
       dist: [
         'sass',
         'copy:styles',
+	'copy:fonts',
         'imagemin',
         'svgmin'
       ]
