@@ -8,28 +8,28 @@
 }
 
 
-@media only screen and (max-width: $sizeXS +1) and (max-width: $sizeSM)
+@media only screen and (min-width: $sizeXS + 1) and (max-width: $sizeSM)
 {
 	.hidden-sm{
 	display: none !important;
 	}
 }
 
-@media only screen and (max-width: $sizeSM +1) and (max-width: $sizeMD)
+@media only screen and (min-width: $sizeSM + 1) and (max-width: $sizeMD)
 {
 	.hidden-md{
 	display: none !important;
 	}
 }
 
-@media only screen and (max-width: $sizeMD +1) and (max-width: $sizeLG)
+@media only screen and (min-width: $sizeMD + 1) and (max-width: $sizeLG)
 {
 	.hidden-lg{
 	display: none !important;
 	}
 }
 
-@media only screen and (max-width: $sizeLG +1)
+@media only screen and (min-width: $sizeLG + 1)
 {
 	.hidden-xl{
 	display: none !important;

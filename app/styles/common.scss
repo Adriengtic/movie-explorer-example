@@ -28,3 +28,7 @@ $headerBoxHeight: $headerHeight + $headerTopPadding + $headerBottomPadding;
 		-moz-box-shadow: #{$params};
 			box-shadow: #{$params};
 }
+
+@mixin hover-transition($property) {
+	@include transition($property 0.3s $ease-in-out-quad);
+}
