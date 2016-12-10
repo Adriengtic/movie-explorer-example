@@ -8,7 +8,7 @@
  * Controller of the movieExplorerApp
  */
 angular.module('movieExplorerApp')
-  .controller('ExectionContextCtrl', function () {
+  .controller('ExecutionContextCtrl', function () {
 	var ctrl = this;
 	  
 	  ctrl.sideMenuIsVisible = false;
